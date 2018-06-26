@@ -41,7 +41,6 @@ body {
 .find-button,
 .menu-button {
   background: transparent;
-  border-style: none;
   color: white;
   font-size: 2rem;
   padding: 0 .5rem; }
