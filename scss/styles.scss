@@ -1,0 +1,162 @@
+//-------------------
+// PATRON DE COLORES
+//-------------------
+
+$text: #333;
+$primary-color: #12afaf;
+$secondary-color: #009500;
+$white-color: #fff;
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $text;
+}
+
+.home {
+    background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+    color: $white-color;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: $text;
+    color: $white-color;
+    padding: .5rem 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .container .logo{
+    width: 150px;
+    height: auto;
+}
+
+/**/
+
+.find-button, 
+.menu-button{
+    color: white;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+
+.find-button {
+    margin-left: auto;
+}
+
+/**/
+#find-block {
+    flex: 1 1 100%;
+}
+
+.find-block-container {
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.find-block-container input[type="text"]{
+    flex: 1 1 100%;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+}
+
+.find-block-container input[type="submit"]{
+    flex: 1 1 auto;
+    border: 0;
+    border-radius:   0 5px 5px 0;
+    background: $primary-color;
+    color: $white-color;
+    padding: 0 1rem;
+}
+
+#menu {
+    flex: 1 1 100%;
+}
+
+#menu ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 1rem;    
+}
+
+#menu ul a {
+    display: block;
+    padding: .8rem 0;
+    text-align: center;
+    color: $white-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid #495057;
+}
+
+#menu ul a:hover {
+    color: $primary-color;
+}
+
+.header-text {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;    
+}
+
+.header-text .display-4 {
+    margin-top: 4rem;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    margin-top: 1rem;
+    transition: all .5s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
+.arrow-down a {
+    display: inline-block;
+    color: $white-color;
+    font-size: 4rem;
+    animation: arrow-float 2s ease-in-out infinite;
+}
+
+@keyframes arrow-float {
+    from {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/**/
+.agencia {
+    background: $primary-color;
+    color: $white-color;
+}
+
+.agencia img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}

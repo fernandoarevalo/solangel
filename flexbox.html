@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>BairesDev | Test</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test BairesDev</title>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        Campo 1:
+        <input type="text" name="f1">
+        <input type="text" name="f2">
+        <input type="text" name="f3">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
